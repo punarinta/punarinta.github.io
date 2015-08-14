@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Brainclock example</title>
+    <link href="clock.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="brainclock" id="clock">
+    <div class="top">
+        <div><div><div><div>&nbsp;</div></div></div></div>
+    </div>
+    <div class="bottom">
+        <div><div><div><div>&nbsp;</div></div></div></div>
+    </div>
+</div>
+</body>
+<script src="clock.js"></script>
+<script>
+
+    function updateClock()
+    {
+        var d = new Date()
+        clock.show(d.getMinutes(), d.getSeconds())
+
+        window.setTimeout(function()
+        {
+            updateClock()
+        }, 1000)
+    }
+
+    updateClock()
+
+</script>
+</html>

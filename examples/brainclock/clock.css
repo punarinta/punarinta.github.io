@@ -1,0 +1,6 @@
+html, body {background-color:black}
+.brainclock {width:220px;background-color:black;padding:50px;margin:300px auto 0}
+.brainclock div div div div div {width:60px;height:30px}
+.brainclock div div {border:10px solid white;margin:10px}
+.brainclock .top div {border-bottom:0;margin-bottom:0;border-top-left-radius:10px;border-top-right-radius:10px}
+.brainclock .bottom div {border-top:0;margin-top:0;border-bottom-left-radius:10px;border-bottom-right-radius:10px}
